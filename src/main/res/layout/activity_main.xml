@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:visibility="visible"
+    tools:context="com.fscp.alcoolougas.MainActivity">
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        ads:layout_constraintGuide_percent="0.9557292"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="367dp" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="30sp"
+        android:visibility="visible"
+        ads:layout_constraintHorizontal_bias="0.0"
+        ads:layout_constraintLeft_toLeftOf="@+id/guideline"
+        ads:layout_constraintTop_toBottomOf="@+id/txtAl"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        ads:layout_constraintRight_toLeftOf="@+id/guideline2"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/txtAl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Preço do alcool"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:visibility="visible"
+        ads:layout_constraintLeft_toLeftOf="@+id/guideline"
+        ads:layout_constraintHorizontal_bias="1.0"
+        android:layout_marginTop="142dp"
+        ads:layout_constraintTop_toBottomOf="@+id/txtGas"
+        ads:layout_constraintRight_toLeftOf="@+id/guideline2"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <TextView
+        android:id="@+id/txtGas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:text="Preço da Gasolina"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:visibility="visible"
+        ads:layout_constraintHorizontal_bias="0.0"
+        ads:layout_constraintLeft_toLeftOf="@+id/guideline"
+        tools:layout_constraintLeft_creator="1"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintTop_creator="1"
+        android:layout_marginTop="9dp"
+        ads:layout_constraintTop_toBottomOf="@+id/lastTxt"
+        ads:layout_constraintRight_toLeftOf="@+id/guideline2" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="16dp"
+        ads:layout_constraintGuide_begin="16dp" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="visible"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"
+        android:layout_marginBottom="16dp"
+        ads:layout_constraintBottom_toTopOf="@+id/guideline4"
+        ads:layout_constraintRight_toLeftOf="@+id/guideline2"
+        android:layout_marginRight="16dp"
+        android:layout_marginLeft="16dp"
+        ads:layout_constraintLeft_toLeftOf="@+id/guideline"
+        android:layout_marginTop="0dp"
+        ads:layout_constraintTop_toBottomOf="@+id/registrar"
+        ads:layout_constraintHorizontal_bias="0.492"
+        ads:layout_constraintVertical_bias="0.515" />
+
+    <NumberPicker
+        android:id="@+id/npunidade"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="77dp"
+        android:layout_marginTop="76dp"
+        android:visibility="visible"
+        ads:layout_constraintBottom_toBottomOf="@+id/txtAl"
+        ads:layout_constraintLeft_toLeftOf="parent"
+        ads:layout_constraintTop_toTopOf="@+id/txtGas"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <NumberPicker
+        android:id="@+id/npcent"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:visibility="visible"
+        ads:layout_constraintVertical_bias="0.023"
+        ads:layout_constraintLeft_toRightOf="@+id/npdez"
+        ads:layout_constraintRight_toLeftOf="@+id/npM"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        ads:layout_constraintBottom_toBottomOf="@+id/txtAl"
+        android:layout_marginTop="76dp"
+        android:layout_marginBottom="77dp"
+        ads:layout_constraintTop_toTopOf="@+id/txtGas" />
+        <!--android:layout_marginRight="0dp" />-->
+
+
+    <NumberPicker
+        android:id="@+id/npdez"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginBottom="77dp"
+        android:layout_marginTop="76dp"
+        android:longClickable="false"
+        android:visibility="visible"
+        ads:layout_constraintBottom_toBottomOf="@+id/txtAl"
+        ads:layout_constraintLeft_toRightOf="@+id/textView"
+        ads:layout_constraintRight_toLeftOf="@+id/npcent"
+        ads:layout_constraintTop_toTopOf="@+id/txtGas"
+        ads:layout_constraintVertical_bias="0.023"
+        tools:layout_constraintBottom_creator="1"
+        tools:layout_constraintTop_creator="1" />
+
+    <NumberPicker
+        android:id="@+id/npM"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        ads:layout_constraintVertical_bias="0.023"
+        ads:layout_constraintLeft_toRightOf="@+id/npcent"
+        ads:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        ads:layout_constraintBottom_toBottomOf="@+id/txtAl"
+        android:layout_marginTop="76dp"
+        android:layout_marginBottom="77dp"
+        ads:layout_constraintTop_toTopOf="@+id/txtGas" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text=","
+        android:textSize="36sp"
+        ads:layout_constraintBottom_toTopOf="@+id/txtAl"
+        ads:layout_constraintLeft_toRightOf="@+id/npunidade"
+        ads:layout_constraintRight_toLeftOf="@+id/npdez"
+        ads:layout_constraintTop_toBottomOf="@+id/txtGas" />
+
+    <Button
+        android:id="@+id/registrar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:text="Registrar"
+        ads:layout_constraintHorizontal_bias="0.0"
+        ads:layout_constraintLeft_toLeftOf="@+id/guideline"
+        ads:layout_constraintRight_toLeftOf="@+id/guideline2"
+        android:layout_marginTop="8dp"
+        ads:layout_constraintTop_toBottomOf="@+id/radioGroup"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <TextView
+        android:id="@+id/lastTxt"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="-"
+        android:textAlignment="center"
+        android:textSize="18sp"
+        ads:layout_constraintLeft_toLeftOf="@+id/guideline"
+        ads:layout_constraintRight_toLeftOf="@+id/guideline2"
+        ads:layout_constraintTop_toTopOf="@+id/guideline3"
+        ads:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintLeft_creator="1" />
+
+    <android.support.constraint.Guideline
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/guideline3"
+        ads:layout_constraintGuide_begin="20dp"
+        android:orientation="horizontal"
+        tools:layout_editor_absoluteY="20dp"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <android.support.constraint.Guideline
+        android:id="@+id/guideline4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        ads:layout_constraintGuide_begin="568dp" />
+
+    <android.support.constraint.ConstraintLayout
+        android:id="@+id/radioGroup"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:checkedButton="@+id/gasolina"
+        ads:layout_constraintLeft_toLeftOf="@+id/guideline"
+        ads:layout_constraintRight_toLeftOf="@+id/guideline2"
+        ads:layout_constraintTop_toBottomOf="@+id/txtResult"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintLeft_creator="1"
+        ads:layout_constraintHorizontal_bias="0.0">
+
+        <RadioButton
+            android:id="@+id/alcool"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Alcool"
+            android:layout_marginTop="8dp"
+            android:layout_marginRight="8dp"
+            ads:layout_constraintTop_toTopOf="parent"
+            ads:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp"
+            ads:layout_constraintVertical_bias="0.0"
+            ads:layout_constraintRight_toRightOf="parent" />
+
+        <RadioButton
+            android:id="@+id/gasolina"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:text="Gasolina"
+            ads:layout_constraintLeft_toLeftOf="parent"
+            tools:layout_constraintTop_creator="1"
+            android:layout_marginStart="10dp"
+            android:layout_marginLeft="10dp"
+            ads:layout_constraintTop_toTopOf="parent"
+            android:layout_marginTop="8dp"
+            ads:layout_constraintBottom_toBottomOf="parent"
+            android:layout_marginBottom="8dp"
+            ads:layout_constraintVertical_bias="0.0"
+            ads:layout_constraintRight_toLeftOf="@+id/alcool"
+            android:layout_marginRight="8dp" />
+
+    </android.support.constraint.ConstraintLayout>
+
+    <!--android:layout_marginRight="8dp" />-->
+
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "728334794754",
+    "firebase_url": "https://alcoolgas.firebaseio.com",
+    "project_id": "alcoolgas",
+    "storage_bucket": "alcoolgas.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:728334794754:android:9b21277e6af62776",
+        "android_client_info": {
+          "package_name": "com.fscp.alcoolougas"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "728334794754-fkkoku4am6oe3behbq8t7ak5o0akcif4.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAWtNuZ1peU5Zga9Qo8Y00sslR9OqJWMow"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

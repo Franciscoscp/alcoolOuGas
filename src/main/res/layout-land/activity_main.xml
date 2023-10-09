@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.fscp.alcoolougas.MainActivity">
+
+    <SeekBar
+        android:id="@+id/sldrAl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:max="500"
+        android:progress="1"
+        android:visibility="visible"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        ads:layout_constraintRight_toRightOf="@+id/txtAl"
+        tools:layout_constraintLeft_creator="1"
+        ads:layout_constraintLeft_toLeftOf="@+id/txtAl"
+        ads:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginTop="8dp"
+        ads:layout_constraintTop_toBottomOf="@+id/txtAl" />
+
+    <TextView
+        android:id="@+id/txtResult"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textAlignment="center"
+        android:textColor="@android:color/holo_green_dark"
+        android:textSize="30sp"
+        android:visibility="visible"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        ads:layout_constraintRight_toRightOf="@+id/sldrAl"
+        tools:layout_constraintLeft_creator="1"
+        ads:layout_constraintLeft_toLeftOf="@+id/sldrAl"
+        android:layout_marginTop="8dp"
+        ads:layout_constraintTop_toBottomOf="@+id/sldrAl"
+        ads:layout_constraintHorizontal_bias="0.0" />
+
+    <TextView
+        android:id="@+id/txtAl"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Preço do alcool"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:visibility="visible"
+        android:layout_marginRight="8dp"
+        ads:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="8dp"
+        ads:layout_constraintTop_toBottomOf="@+id/sldrGas"
+        android:layout_marginLeft="8dp"
+        ads:layout_constraintLeft_toLeftOf="parent" />
+
+    <SeekBar
+        android:id="@+id/sldrGas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:max="500"
+        android:progress="1"
+        android:visibility="visible"
+        tools:layout_constraintRight_creator="1"
+        tools:layout_constraintBottom_creator="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        ads:layout_constraintRight_toRightOf="parent"
+        tools:layout_constraintLeft_creator="1"
+        ads:layout_constraintLeft_toLeftOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        ads:layout_constraintHorizontal_bias="0.0"
+        android:layout_marginTop="8dp"
+        ads:layout_constraintTop_toBottomOf="@+id/txtGas" />
+
+    <TextView
+        android:id="@+id/txtGas"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Preço da Gasolina"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:visibility="visible"
+        tools:layout_constraintTop_creator="1"
+        tools:layout_constraintRight_creator="1"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        ads:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="16dp"
+        tools:layout_constraintLeft_creator="1"
+        ads:layout_constraintLeft_toLeftOf="parent"
+        ads:layout_constraintTop_toTopOf="parent"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp" />
+
+    <com.google.android.gms.ads.AdView
+        android:id="@+id/adView"
+        ads:adSize="SMART_BANNER"
+        ads:adUnitId="@string/banner_ad_unit_id"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginLeft="0dp"
+        android:layout_marginRight="0dp"
+        ads:layout_constraintBottom_toBottomOf="parent"
+        ads:layout_constraintLeft_toLeftOf="parent"
+        ads:layout_constraintRight_toRightOf="parent" />
+
+
+</android.support.constraint.ConstraintLayout>
